@@ -1,0 +1,2 @@
+* Purpose
+  Docker image for angular and react CI incl. deployment to aws.
