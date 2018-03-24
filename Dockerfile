@@ -1,11 +1,16 @@
-FROM node
+FROM node:alpine
 
-RUN apt-get update && apt-get install -y \
-  awscli \
-  zip
-
-RUN npm install -g angular-cli grunt
-
-RUN curl -o- -L https://yarnpkg.com/install.sh | bash
-
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apk -v --update add \
+  zip \
+  python \
+  py-pip \
+  groff \
+  curl \
+  bash \
+  gnupg \
+  && pip install --upgrade awscli \
+  && /bin/bash \
+  && touch ~/.bashrc \
+  && curl -o- -L https://yarnpkg.com/install.sh | bash \
+  && apk -v --purge del py-pip curl gnupg \
+  && rm /var/cache/apk/*

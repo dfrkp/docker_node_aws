@@ -1,12 +1,12 @@
 
 # Table of Contents
 
-1.  [Purpose](#org2174d64)
+1.  [Purpose](#org966ce2b)
 
 
-<a id="org2174d64"></a>
+<a id="org966ce2b"></a>
 
 # Purpose
 
-Docker image for angular and react CI incl. deployment to aws.
+Docker image for node.js CI incl. deployment to aws.
 
