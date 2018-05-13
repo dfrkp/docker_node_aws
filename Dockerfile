@@ -1,6 +1,6 @@
 FROM node:alpine
 
-## Update to latest node by pushing update to github on 08-Apr-2018
+## Update by pushing update to github on 13-May-18
 
 RUN apk -v --update add \
   zip \
