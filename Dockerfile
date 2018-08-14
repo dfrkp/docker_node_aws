@@ -1,6 +1,6 @@
 FROM node:alpine
 
-## Update by pushing update to github on 27-Jul-18
+## Update by pushing update to github on 14-Aug-18
 
 RUN apk -v --update add \
   zip \
